@@ -1,0 +1,26 @@
+.column {
+    float: left;
+    width: 33.33%;
+}
+.column p {
+    padding: 16px;
+}
+h1 {
+    padding-top: 40px;
+    padding-left: 40px;
+    color: #474547;
+    
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.row {
+    padding: 2.5rem;
+}
+@media screen and (max-width:600px) {
+    .column {
+        width: 100%;
+    }
+}
