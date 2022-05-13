@@ -75,6 +75,14 @@ a {
   font-style: italic;
   color: #ffffff;
 }
+.latest {
+  color: #474354;
+  font-weight: 400;
+  font-size: 16px;
+  font-style: italic;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
 .hero-img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)),
     url(/img/heropic.png);
@@ -112,7 +120,7 @@ a {
   color: #474354;
 }
 .hero-btn:hover {
-  background-color: #FFC380;
+  background-color: #ffc380;
 }
 .breadcrumbs {
   border: 1px solid #474543;
@@ -251,6 +259,12 @@ a {
     font-size: 5.9rem;
     font-weight: 600;
     text-align: left;
+  }
+  .hero-text h1 {
+    font-size: 40px;
+  }
+  .hero-text p {
+    font-size: 24px;
   }
   .split-columns {
     display: block;
