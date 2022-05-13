@@ -28,15 +28,18 @@
     letter-spacing: 1.6;
     text-transform: uppercase;
     text-decoration: none;
+    padding-left: 16px;
 }
 .product-info h1 {
     font-weight: 300px;
     font-size: 54px;
     color: #474547;
     letter-spacing: -2px;
+    padding-left: 16px;
 }
 .product-info p {
     font-size: 16px;
     font-weight: 300;
     color: #86939e;
+    padding-left: 16px;
 }
