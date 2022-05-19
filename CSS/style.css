@@ -49,6 +49,7 @@ a {
   width: 150%;
   top: 4rem;
   background-color: #f2dcc38a;
+  z-index: 9999;
 }
 .nav-link a {
   display: block;
@@ -133,13 +134,21 @@ a {
   padding-bottom: 8px;
 }
 .split-section {
-  padding: 4rem 0;
+  width: 100%;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.5rem;
 }
 .container-split {
-  margin-inline: auto;
-  position: relative;
-  width: 90%;
+  max-width: 98rem;
+  width: 100%;
+  padding: 5rem;
+  background-color: white;
+  box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
 }
 .split-columns {
   display: flex;
@@ -155,12 +164,6 @@ a {
 .fa-solid {
   padding-left: 40px;
 }
-.featured-sm {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  padding-left: 72px;
-}
 .text-block {
   position: absolute;
   bottom: 20px;
@@ -170,6 +173,51 @@ a {
 }
 .text-block a {
   color: #ffffff;
+}
+.featured-content {
+  width: 85%;
+}
+.featured-picture {
+  min-width: 35rem;
+  max-width: 35rem;
+  height: 30rem;
+  position: relative;
+}
+.featured-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 4px;
+}
+.featured-info {
+  padding-left: 16px;
+}
+.post-date span {
+  display: block;
+  color: #474543;
+  font-size: 16px;
+  font-weight: 600;
+  margin: .5rem 0;
+}
+.featured-title {
+  font-size: 32px;
+  margin-top: 1.5rem 0 2rem;
+  text-transform: uppercase;
+  color: #474543;
+}
+.featured-text {
+  margin-bottom: 3rem;
+  font-size: 24px;
+  color: #474543bb;
+}
+.featured-cta {
+  display: inline-block;
+  padding: 1.5rem 3rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 16px;
+
 }
 /* Herobanner end */
 /* Carousel */
@@ -273,6 +321,39 @@ a {
     justify-content: center;
   }
 }
+@media screen and (max-width: 1068px) {
+  .container-split {
+    max-width: 80rem;
+  }
+  .featured-picture {
+    min-width: 30rem;
+    max-width: 30rem;
+  }
+}
+@media screen and (max-width: 868px) {
+  .container-split {
+    max-width: 70rem;
+  }
+ 
+}
+@media screen and (max-width: 768px) {
+  .container-split {
+    padding: 2.5rem;
+    flex-direction: column;
+  }
+  .featured-picture {
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .split-columns h2 {
+    font-size: 2rem;
+  }
+  .featured-sm {
+    padding: 0;
+  }
+}
 @media screen and (min-width: 600px) {
   .nav-link {
     display: block;
@@ -288,9 +369,12 @@ a {
   .hamburger {
     display: none;
   }
+  .split-columns h2 {
+    font-size: 5.9rem;
+  }
 }
 @media screen and (min-width: 350px) {
- .hero-btn {
+  .hero-btn {
     font-size: 16px;
   }
 }
