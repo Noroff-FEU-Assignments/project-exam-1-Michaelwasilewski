@@ -14,7 +14,8 @@ async function getBlogs(){
             let blogPrice = blogData[i].prices.price;
             let currency = blogData[i].prices.currency_code;
             let blogName = blogData[i].name;
-            gamesContainer.innerHTML += 
+            gamesContainer.innerHTML += `
+            `;
         }
     } catch (error) {
         console.log ("ops, there is an error", error);
