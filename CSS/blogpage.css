@@ -1,61 +1,88 @@
-.column {
-  float: left;
-  width: 33.33%;
+* {
+  transition: all .2s linear;
+  text-transform: capitalize;
+  outline: none;
+  border: none;
 }
-
-.column p {
-  padding-top: 16px;
-  padding-bottom: 16px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #474547;
+/* html {
+  overflow-x: hidden;
+} */
+.blog-container {
+  
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+.blog-container .title {
+  font-size: 3.5rem;
+  color: #474747;
+  margin-bottom: 3rem;
   text-transform: uppercase;
+  text-align: center;
+}
+.blog-container .post-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+.blog-container .post-container .post {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  outline: .1rem solid #ccc;
+  outline-offset: -1.5rem;
   cursor: pointer;
 }
-.column p:hover {
-  color: #ffc380;
+.blog-container .post-container .post:hover {
+  outline: .2rem solid #222;
+  outline-offset: 0;
 }
-h1 {
-  padding-top: 40px;
-  color: #474547;
-  padding-left: 64px;
+.blog-container .post-container .post:hover img {
+  transform: scale(1.1);
+}
+.blog-container .post-container .post p {
+  padding: .5rem 0;
+  font-size: 2rem;
+  color: #474747;
+}
+.blog-container .post-container .post:hover p {
+  color: #229853;
+}
+.blog-preview {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, .8);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.blog-preview .preview {
+  display: none;
+  padding: 2rem;
+  text-align: center;
+  background: #fff;
+  margin: 2rem;
+  width: 40rem;
+}
+.blog-preview .preview.active {
+  display: inline-block;
+}
+.blog-preview .preview img {
+  height: 30rem;
+}
+.blog-preview .preview .fa-times {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  cursor: pointer;
+  font-size: #444;
+  font-size: 4rem;
+}
+.blog-preview .preview .fa-times:hover {
+  transform: rotate(90deg);
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.row {
-  padding: 4rem;
-}
 
-@media screen and (max-width: 1280px) {
-  .column {
-    width: 50%;
-  }
-  h1 {
-    text-align: center;
-  }
-  .row {
-    padding-left: 12rem;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-}
-
-@media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-    }
-    h1 {
-      text-align: center;
-    }
-    .row {
-      padding-top: 2rem;
-      padding-bottom: 2rem;
-      padding-left: 6rem;
-      margin-left: 8px;
-      display: block;
-    }
-  }

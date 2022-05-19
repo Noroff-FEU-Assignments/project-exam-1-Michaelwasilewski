@@ -8,6 +8,7 @@
     <meta name="description" content="Rating, top five, best there is">
     <title>Blog Page</title>
     <script src="/Js/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/06dab1af12.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -35,64 +36,103 @@
         </nav>
     </header>
     <section>
-        <h1>OUR <span class="bold">B</span>LOG POSTS</h1>
-        <div class="row">
-            <div class="column">
-                <a href="/blogspecific.html"><img class="blog-img" src="/img/drone.png" alt="Drone"></a>
-                <a href="/blogspecific.html">
-                    <p><span class="bold">00.</span>The best drones</p>
-                </a>
+        <div class="blog-container">
+            <h1 class="title">OUR <span class="bold">B</span>LOG POSTS</h1>
+            <div class="post-container">
+                <div class="post" data-name="p1">
+                    <img src="/img/drone.png" alt="Hand holding drone">
+                    <a href="/blogspecific.html">
+                        <p> best drones</p>
+                    </a>
+                </div>
+                <div class="post" data-name="p2">
+                    <img src="/img/gaming2.png" alt="Hand holding drone">
+                    <a href="/blogspecific.html">
+                        <p> The best gaming setup</p>
+                    </a>
+                </div>
+                <div class="post" data-name="p3">
+                    <img src="/img/homedecor1.png" alt="Hand holding drone">
+                    <a href="/blogspecific.html">
+                        <p> The best home decor</p>
+                    </a>
+                </div>
+                <div class="post" data-name="p4">
+                    <img src="/img/homedecor3.png" alt="Hand holding drone">
+                    <a href="/blogspecific.html">
+                        <p> Comfiest chairs</p>
+                    </a>
+                </div>
+                <div class="post" data-name="p5">
+                    <img src="/img/school-supp.png" alt="Hand holding drone">
+                    <a href="/blogspecific.html">
+                        <p> School supplies</p>
+                    </a>
+                </div>
+                <div class="post" data-name="p6">
+                    <img src="/img/office-1.png" alt="Hand holding drone">
+                    <a href="/blogspecific.html">
+                        <p> best office accesories</p>
+                    </a>
+                </div>
+                <div class="post" data-name="p7">
+                    <img src="/img/gaming-supp.png" alt="Hand holding drone">
+                    <a href="/blogspecific.html">
+                        <p> top rated controllers</p>
+                    </a>
+                </div>
+                <div class="post" data-name="p8">
+                    <img src="/img/homedecor2.png" alt="Hand holding drone">
+                    <a href="/blogspecific.html">
+                        <p> Most popular home decor</p>
+                    </a>
+                </div>
+                <div class="post" data-name="p9">
+                    <img src="/img/Office-2.png" alt="Hand holding drone">
+                    <a href="/blogspecific.html">
+                        <p> work from home</p>
+                    </a>
+                </div>
+                <div class="post" data-name="p10">
+                    <img src="/img/home-office.png" alt="Hand holding drone">
+                    <a href="/blogspecific.html">
+                        <p> Home office</p>
+                    </a>
+                </div>
+                <div class="post" data-name="p11">
+                    <img src="/img/traveloffice.png" alt="Hand holding drone">
+                    <a href="/blogspecific.html">
+                        <p> Work on the go</p>
+                    </a>
+                </div>
+                <div class="post" data-name="p12">
+                    <img src="/img/office3.png" alt="Hand holding drone">
+                    <a href="/blogspecific.html">
+                        <p> Office accessories</p>
+                    </a>
+                </div>
             </div>
-            <div class="column">
-                <a href="/blogspecific.html"><img class="blog-img" src="/img/gaming2.png" alt="Gaming setup"></a>
-                <p><span class="bold">01.</span>Upgrade your room to the next level</p>
+        </div>
+        <!-- <a href="#" class="previous">&laquo; Previous</a>
+        <a href="#" class="next">Next &raquo;</a> -->
+        <div class="blog-preview">
+            <div class="preview" data-target="p1">
+                <i class="fas fa-times"></i>
+                <img src="/img/drone.png" alt="Hand holding up a drone">
+                <p>Best Drones</p>
+                <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>4.5 (65)</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, exercitationem!</p>
+                <button>Go to Store</button>
             </div>
-            <div class="column">
-                <a href="/blogspecific.html"><img class="blog-img" src="/img/homedecor1.png" alt="Home decor"></a>
-                <p><span class="bold">02.</span>Cop the best home decor</p>
-            </div>
-            <div class="column">
-                <a href="/blogspecific.html"><img class="blog-img" src="/img/homedecor3.png" alt="home decor"></a>
-                <p><span class="bold">03.</span>Most popular</p>
-            </div>
-            <div class="column">
-                <a href="/blogspecific.html"><img class="blog-img" src="/img/school-supp.png" alt="School supplies"></a>
-                <p><span class="bold">04.</span>School supplies madafaka</p>
-            </div>
-            <div class="column">
-                <a href="/blogspecific.html"><img class="blog-img" src="/img/office-1.png" alt="office"></a>
-                <p><span class="bold">05.</span>Office supplies</p>
-            </div>
-            <div class="column">
-                <a href="/blogspecific.html"><img class="blog-img" src="/img/gaming-supp.png" alt="gaming"></a>
-                <p><span class="bold">06.</span>gaming supplies</p>
-            </div>
-            <div class="column">
-                <a href="/blogspecific.html"><img class="blog-img" src="/img/homedecor2.png" alt="home decor"></a>
-                <p><span class="bold">07.</span>A cosy photo wall? Look no further</p>
-            </div>
-            <div class="column">
-                <a href="/blogspecific.html"><img class="blog-img" src="/img/Office-2.png" alt="Office supplies"></a>
-                <p><span class="bold">08.</span>Office supplies</p>
-            </div>
-            <div class="column">
-                <a href="/blogspecific.html"><img class="blog-img" src="/img/home-office.png" alt="home office"></a>
-                <p><span class="bold">09.</span>Best home office</p>
-            </div>
-            <div class="column">
-                <a href="/blogspecific.html"><img class="blog-img" src="/img/traveloffice.png"
-                        alt="Portable office supplies"></a>
-                <p><span class="bold">10.</span>Best axcion cameras for your next trip</p>
-            </div>
-            <div class="column">
-                <a href="/blogspecific.html"><img class="blog-img" src="/img/office3.png" alt="office supplies"></a>
-                <p><span class="bold">11.</span>Get the best office supplies</p>
-            </div>
-            <a href="#" class="previous">&laquo; Previous</a>
-            <a href="#" class="next">Next &raquo;</a>
         </div>
     </section>
-
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-row">
