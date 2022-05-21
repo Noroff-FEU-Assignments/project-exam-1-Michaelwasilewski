@@ -12,7 +12,7 @@ function validateForm(){
 
 
     if (nameInput.value.length < 5){
-        errorMessage[0].innerText = "Please enter your name";
+        errorMessage[0].innerText = "Please enter your name, minimum 5 characters long";
         nameInput.classList.add("error-border");
         errorFlag = true;
     }

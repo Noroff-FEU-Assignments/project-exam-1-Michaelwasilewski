@@ -14,8 +14,8 @@ async function getBlogs() {
       let altText = blogData[i].images[0].alt;
       let blogName = blogData[i].name;
       let blogDescription = blogData[i].short_description;
-      blogContainer.innerHTML += `
-            
+      blogContainer.innerHTML += 
+      `
             <div class="split-section">
                 <div class="container-split">
                     <div class="featured-picture">
@@ -26,11 +26,9 @@ async function getBlogs() {
                             <span>Tuesday</span>
                                  <span>19.05.2022</span>
                          </div>
-                    <h2 class="featured-title">${blogName}</h2>
-                        <p class="featured-text">${blogDescription}</p>
-                    <a class="featured-cta" href="/blogspecific.html?id=${blogData[i].id}">
-                        Read More
-                    </a>
+                            <h2 class="featured-title">${blogName}</h2>
+                            <p class="featured-text"> ${blogDescription}</p>
+                            <a class="featured-cta" href="/blogspecific.html?id=${blogData[i].id}">Read More</a>
                     </div>
                 </div>
             </div>
