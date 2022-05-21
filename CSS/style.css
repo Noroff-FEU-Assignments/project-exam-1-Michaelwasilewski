@@ -140,7 +140,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 1.5rem;
+  padding: 1.5rem 1.5rem;
 }
 .container-split {
   max-width: 98rem;
@@ -194,6 +194,13 @@ a {
 }
 .featured-info {
   padding-left: 16px;
+}
+.product-rating {
+  color: #e3ac08;
+}
+.product-rating span {
+  font-weight: 300;
+  color: #474547;
 }
 .post-date span {
   display: block;
