@@ -381,7 +381,7 @@ a {
 }
 @media screen and (max-width: 768px) {
   .container-split {
-    padding: 2.5rem;
+    padding: 0.5rem;
     flex-direction: column;
   }
   .featured-picture {

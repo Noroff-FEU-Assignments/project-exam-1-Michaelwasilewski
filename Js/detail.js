@@ -17,7 +17,7 @@ async function getBlogDetails () {
         let blogTitle = singleBlogDetail.name;
         let bloginfo = singleBlogDetail.short_description;
         blogDetails.innerHTML += `
-        <div class="split-section">
+            <div class="split-section">
                 <div class="container-split">
                     <div class="featured-picture">
                         <img src="${blogPicture}" alt="${altText}">
@@ -40,8 +40,9 @@ async function getBlogDetails () {
                         <h2 class="featured-title"> Pro's & Cons </h2>
                         <p class="featured-text">${bloginfo}</p>
                         <a class="featured-cta" href="/blogspecific.html">Visit site</a>
-
-
+                    </div>
+                </div>
+            </div>
         `
     } catch (error) {
         console.log(error);
