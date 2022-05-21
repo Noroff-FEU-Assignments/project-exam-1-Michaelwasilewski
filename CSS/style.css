@@ -63,6 +63,40 @@ a {
   display: none;
 }
 /* Navbar End */
+/* Breadcrumbs */
+.breadcrums {
+  padding-left: 52px;
+  padding-top: 24px;
+  list-style: none;
+}
+
+.breadcrums li {
+  display: inline;
+  font-size: 18px;
+  font-family: 'Roboto';
+}
+
+.breadcrums li + li::before {
+  padding: 8px;
+  color: black;
+  content: '/\00a0';
+}
+
+.breadcrums li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+.breadcrums li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+.active {
+  color: #0275d8;
+  font-weight: 600;
+  font-size: 24px;
+}
 /* Herobanner */
 .featured {
   display: flex;
@@ -125,10 +159,6 @@ a {
 .hero-btn:hover {
   background-color: #474354;
   color: #f2dcc3;
-}
-.breadcrumbs {
-  border: 1px solid #474543;
-  width: 1195px;
 }
 
 .section-line {
@@ -207,7 +237,7 @@ a {
   color: #474543;
   font-size: 16px;
   font-weight: 600;
-  margin: .5rem 0;
+  margin: 0.5rem 0;
 }
 .featured-title {
   font-size: 32px;
@@ -231,7 +261,7 @@ a {
 }
 .featured-cta:hover {
   background-color: #474543;
-  color:#f2dcc3
+  color: #f2dcc3;
 }
 /* Herobanner end */
 /* Carousel */
@@ -348,7 +378,6 @@ a {
   .container-split {
     max-width: 70rem;
   }
- 
 }
 @media screen and (max-width: 768px) {
   .container-split {
