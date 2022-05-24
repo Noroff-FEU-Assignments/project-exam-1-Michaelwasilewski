@@ -43,3 +43,8 @@
   color: #474747;
 
 }
+@media screen and (max-width: 500px) {
+  .blog-container {
+    padding: 0rem 1rem;
+  }
+}
