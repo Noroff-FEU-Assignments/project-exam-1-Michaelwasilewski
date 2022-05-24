@@ -15,3 +15,31 @@
   text-transform: uppercase;
   text-align: center;
 }
+
+.button-more{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+
+}
+
+.load-more-button {
+  font-family:"roboto", sans-serif;
+  box-shadow: 0 10px 27px rgba(0, 0, 0, 0.20);
+  font-size: 24px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  height: 80px;
+  border-radius: 12px;
+  background-color: #474747;
+}
+
+.load-more-button:hover {
+  background-color: #f2dcc38a;
+  color: #474747;
+
+}
