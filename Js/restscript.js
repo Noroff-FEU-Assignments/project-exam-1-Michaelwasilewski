@@ -29,7 +29,7 @@ async function getBlogs() {
                          </div>
                             <h2 class="featured-title">${blogName}</h2>
                             <p class="featured-text"> ${blogDescription}</p>
-                            <a class="featured-cta" href="/blogspecific.html?id=${blogData[i].id}">Read More</a>
+                            <a class="featured-cta" href="blogspecific.html?id=${blogData[i].id}">Read More</a>
                     </div>
                 </div>
             </div>

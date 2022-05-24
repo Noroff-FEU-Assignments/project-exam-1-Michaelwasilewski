@@ -22,14 +22,10 @@ async function getBlogDetails() {
     let bloginfo = singleBlogDetail.x_metadata.paragraf;
     let blogDate = singleBlogDetail.x_date;
     blogDetails.innerHTML += `
-                <div class="container-split">
+                <div>
+                    <div class="container-split">
                     <div class="featured-picture" >
-                    <img id="myImg" src="${blogPicture}" alt="${altText}" >
-                    </div>
-                    <div id="myModal" class="modal">
-                    <span class="closed">&times;</span>
-                    <img  src="${blogPicture}" class="modalContent" id="img01" />
-                    <div id="caption">${altText}</div>
+                    <img id="myImg" src="${blogPicture}" alt="${altText}">
                     </div>
                     <div class="featured-info">
                         <div class="post-date">
@@ -51,6 +47,13 @@ async function getBlogDetails() {
                         <a class="featured-cta" href="#">Visit site</a>
                     </div>
                 </div>
+                    <div id="myModal" class="modal">
+                        <span class="closed">&times;</span>
+                        <img  src="${blogPicture}" class="modalContent" id="img01"  alt=""/>
+                        <div id="caption">${altText}</div>
+                    </div>
+                </div>
+                
         `;
   } catch (error) {
     console.log(error);
@@ -61,16 +64,14 @@ async function getBlogDetails() {
       image.onclick = function () {
           modal.style.display = "block";
       }
+      const closeModal = document.querySelector(".closed");
+      console.log(closeModal);
+      closeModal.onclick = function () {
+      modal.style.display = "none";
+      }
   }
 }
-getBlogDetails();
 getBlogDetails().then(() => {
-    const closeModal = document.querySelector(".closed");
-console.log(closeModal);
-    closeModal.onclick = function () {
-        console.log("hello");
-    //   modal.style.display = "none";
-    }
 }) ;
 
 
