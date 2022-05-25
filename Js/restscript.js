@@ -18,6 +18,7 @@ async function getBlogs() {
       let blogName = blogData[i].acf.title;
       let blogDescription = blogData[i].acf.paragraf;
       let blogDate = blogData[i].x_date;
+      let author = blogData[i].x_author;
       let blogPost = `
             <div class="split-section">
                 <div class="container-split">
@@ -26,7 +27,7 @@ async function getBlogs() {
                     </div>
                     <div class="featured-info">
                         <div class="post-date">
-                            <span>Tuesday</span>
+                            <span>${author}</span>
                             <span>${blogDate}</span>
                          </div>
                             <h2 class="featured-title">${blogName}</h2>
@@ -58,6 +59,7 @@ async function getMoreBlogs() {
       let blogName = blogData[i].acf.title;
       let blogDescription = blogData[i].acf.paragraf;
       let blogDate = blogData[i].x_date;
+      let author = blogData[i].x_author;
       let blogPost = 
       // blogContainer.innerHTML += 
       
@@ -69,7 +71,7 @@ async function getMoreBlogs() {
                     </div>
                     <div class="featured-info">
                         <div class="post-date">
-                            <span>Tuesday</span>
+                            <span>${author}</span>
                             <span>${blogDate}</span>
                          </div>
                             <h2 class="featured-title">${blogName}</h2>
