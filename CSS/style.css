@@ -3,16 +3,12 @@
   margin: 0;
   padding: 0;
 }
-
-
-
 body {
   font-family: "Roboto", sans-serif;
   line-height: 1.6;
   background: #eee;
   position: relative;
 }
-
 a {
   text-decoration: none;
   color: #474543;
@@ -26,7 +22,6 @@ a {
   align-items: center;
   background-color: #f2dcc3;
 }
-
 .logo {
   font-size: 18px;
   font-weight: 600;
@@ -38,6 +33,7 @@ a {
 }
 .hamburger {
   padding-right: 20px;
+  padding-top: 8px;
   cursor: pointer;
 }
 .hamburger .line {
@@ -72,29 +68,24 @@ a {
   padding-top: 24px;
   list-style: none;
 }
-
 .breadcrums li {
   display: inline;
   font-size: 18px;
   font-family: "Roboto";
 }
-
 .breadcrums li + li::before {
   padding: 8px;
   color: black;
   content: "/\00a0";
 }
-
 .breadcrums li a {
   color: #0275d8;
   text-decoration: none;
 }
-
 .breadcrums li a:hover {
   color: #01447e;
   text-decoration: underline;
 }
-
 .active {
   color: #0275d8;
   font-weight: 600;
@@ -425,6 +416,10 @@ a {
   .container-split {
     max-width: 70rem;
   }
+  .item {
+    width: 150px;
+    height: 150px;
+  }
 }
 @media screen and (max-width: 768px) {
   .container-split {
@@ -449,6 +444,7 @@ a {
   .featured-sm {
     padding: 0;
   }
+ 
 }
 @media screen and (min-width: 600px) {
   .nav-link {
@@ -473,4 +469,5 @@ a {
   .hero-btn {
     font-size: 16px;
   }
+  
 }

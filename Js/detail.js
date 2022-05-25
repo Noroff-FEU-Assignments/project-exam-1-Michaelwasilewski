@@ -55,6 +55,7 @@ async function getBlogDetails() {
                 </div>
                 
         `;
+        document.title=`${blogTitle}`;
   } catch (error) {
     console.log(error);
   } finally {
