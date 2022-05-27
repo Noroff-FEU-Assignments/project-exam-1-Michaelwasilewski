@@ -21,6 +21,7 @@ async function getBlogDetails() {
     let blogTitle = singleBlogDetail.x_metadata.title;
     let bloginfo = singleBlogDetail.x_metadata.paragraf;
     let blogDate = singleBlogDetail.x_date;
+    let author = singleBlogDetail.x_author;
     blogDetails.innerHTML += `
                 <div>
                     <div class="container-split">
@@ -29,7 +30,7 @@ async function getBlogDetails() {
                     </div>
                     <div class="featured-info">
                         <div class="post-date">
-                            <span>Tuesday</span>
+                            <span>${author}</span>
                             <span>${blogDate}</span>
                         </div>
                         <h2 class="featured-title">${blogTitle}</h2>

@@ -61,8 +61,6 @@ async function getMoreBlogs() {
       let blogDate = blogData[i].x_date;
       let author = blogData[i].x_author;
       let blogPost = 
-      // blogContainer.innerHTML += 
-      
       `
             <div class="split-section">
                 <div class="container-split">

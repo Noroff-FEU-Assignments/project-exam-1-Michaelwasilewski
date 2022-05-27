@@ -46,8 +46,8 @@ a {
 .nav-link {
   position: fixed;
   width: 150%;
-  top: 4rem;
-  background-color: #f2dcc38a;
+  top: 3rem;
+  background-color: #f2dcc3;
   z-index: 20;
 }
 .nav-link a {
@@ -272,7 +272,6 @@ a {
   top: 0;
   right: 0;
 }
-
 .modalContent {
   margin: auto;
   display: block;
@@ -280,7 +279,6 @@ a {
   max-width: 800px;
   padding-top: 100px;
 }
-
 #caption {
   margin: 0 auto;
   display: block;
@@ -291,7 +289,6 @@ a {
   height: 150px;
   text-align: center;
 }
-
 .closed {
   position: absolute;
   top: 1em;
@@ -299,7 +296,6 @@ a {
   font-size: 24px;
   cursor: pointer;
 }
-
 /* Modal end */
 /* Carousel */
 .carousel-container {
@@ -444,7 +440,6 @@ a {
   .featured-sm {
     padding: 0;
   }
- 
 }
 @media screen and (min-width: 600px) {
   .nav-link {
@@ -469,5 +464,4 @@ a {
   .hero-btn {
     font-size: 16px;
   }
-  
 }
